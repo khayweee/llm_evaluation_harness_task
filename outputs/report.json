@@ -1,0 +1,37 @@
+{
+  "total_cases": 2,
+  "passed": 1,
+  "partial": 0,
+  "failed": 1,
+  "pass_rate": 0.5,
+  "started_at": "2026-04-20T21:13:39.597352",
+  "completed_at": "2026-04-20T21:13:39.597580",
+  "cases": [
+    {
+      "case_id": "q1",
+      "input": "What is the leave policy?",
+      "expected": "14 days annual leave",
+      "response": "14 days annual leave",
+      "score": {
+        "exact_match": 1.0,
+        "similarity": 1.0,
+        "verdict": "pass",
+        "reason": "Exact match"
+      },
+      "error": null
+    },
+    {
+      "case_id": "q3",
+      "input": "Who approves insurance claims?",
+      "expected": "HR",
+      "response": "",
+      "score": {
+        "exact_match": 0.0,
+        "similarity": 0.0,
+        "verdict": "fail",
+        "reason": "Similarity 0.00 below threshold"
+      },
+      "error": null
+    }
+  ]
+}
