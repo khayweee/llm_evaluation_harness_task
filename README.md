@@ -110,3 +110,22 @@ tests/unit/test_scoring.py::test_score_returns_fail_verdict PASSED              
 
 ============================== 8 passed in 0.07s ===============================
 ```
+
+## Future Scoring Improvements
+
+With more time, I would improve the scoring metric beyond exact match and token
+overlap so the harness can evaluate open-ended answers more reliably:
+
+1. **BERTScore**:
+
+   > Compare the generated `response` against the `expected` answer at
+   > the contextual token level. This would show whether individual tokens and
+   > phrases are similar even when the wording is not exactly the same.
+
+2. **Embedding similarity**:
+
+   > Compare vector embeddings for the `response` and
+   > `expected` answer to measure their semantic similarity. This is probably the
+   > more important metric for open-ended question-answering tasks, which is
+   > similar to TruthfulQA-style evaluations.
+   > Correct answer can use different wording while still preserving the same meaning.
